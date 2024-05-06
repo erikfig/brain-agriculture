@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "ac7b9435-14f1-4084-8839-0b5cc55c0d87",
+		"name": "Brain Agriculture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "613834",
+		"_collection_link": "https://blue-spaceship-557402.postman.co/workspace/Instagran-crawler~d8fea8c6-13fb-4c2f-8860-5d1e29ce9755/collection/613834-ac7b9435-14f1-4084-8839-0b5cc55c0d87?action=share&source=collection_link&creator=613834"
+	},
+	"item": [
+		{
+			"name": "Producers",
+			"item": [
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oat_MQ.TzV1aHFDZk9Jb1BCZTl4Q01LaWdPSmMyU0RScG5aZlBHREpOWU9INTE2MDU5NTEzOTc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/api/producers/45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"producers",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oat_MQ.TzV1aHFDZk9Jb1BCZTl4Q01LaWdPSmMyU0RScG5aZlBHREpOWU9INTE2MDU5NTEzOTc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3333/api/producers/45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"producers",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oat_MQ.TzV1aHFDZk9Jb1BCZTl4Q01LaWdPSmMyU0RScG5aZlBHREpOWU9INTE2MDU5NTEzOTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"document\": \"85.178.058/0001-82\",\r\n    \"producerName\": \"Erik 2\",\r\n    \"farmName\": \"Erik LLC\",\r\n    \"city\": \"West Mallory\",\r\n    \"state\": \"Rhode Island\",\r\n    \"totalArea\": \"10\",\r\n    \"agriculturalArea\": \"8\",\r\n    \"vegetationArea\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/api/producers/45",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"producers",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oat_MQ.TzV1aHFDZk9Jb1BCZTl4Q01LaWdPSmMyU0RScG5aZlBHREpOWU9INTE2MDU5NTEzOTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"document\": \"85.178.058/0001-82\",\r\n    \"producerName\": \"Erik\",\r\n    \"farmName\": \"Erik LLC\",\r\n    \"city\": \"West Mallory\",\r\n    \"state\": \"Rhode Island\",\r\n    \"totalArea\": \"10\",\r\n    \"agriculturalArea\": \"8\",\r\n    \"vegetationArea\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/api/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oat_MQ.TzV1aHFDZk9Jb1BCZTl4Q01LaWdPSmMyU0RScG5aZlBHREpOWU9INTE2MDU5NTEzOTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/api/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"producers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "AUTH",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"adminadmin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/api/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
